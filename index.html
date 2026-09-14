@@ -222,11 +222,442 @@
       
     </p>
 
+    <h1>Keymap</h1>
 
+    <p>
 
+      On this screen, you can configure keyboard and mouse shortcuts.
+      
+    </p>
 
+     <img src="https://docs.blender.org/manual/en/latest/_images/editors_preferences_section_keymap.webp" alt="">
+
+    <p style="margin-bottom: 50px;">
+
+      Blender Preferences Keymap section.
+      
+    </p>
+
+    <h2>Presets</h2>
+
+    <p>
+
+      At the top of the window, you can select and manage presets.
+      
+    </p>
+
+    <h3>Keymap Presets</h3>
+
+    <p>
+
+      The selector lets you choose from builtin presets:
+      
+    </p>
+
+    <p>
+
+      Blender: the default keymap, which is the one used throughout this manual.
+      
+    </p>
+
+    <p>
+      Blender 27x: legacy keymap as used in Blender 2.79 and before.
+    </p>
+
+    <p>
+
+      Industry Compatible: a keymap which more closely matches other 3D editing applications.
+      
+    </p>
+
+    <h2>+ Add Custom Keymap Configuration</h2>
+
+    <p>
+      Add a custom keymap configuration.
+    </p>
+
+    <h2> Remove Keymap Configuration</h2>
+
+    <p>
+      Remove a custom keymap configuration.
+    </p>
+
+    <h2>Import</h2>
+
+    <p>Opens a File Browser to select a .py file containing a custom preset.</p>
+
+    <h2>Export</h2>
+
+    <p>
+      Saves the current keymap configuration as a preset others may use.
+    </p>
+
+    <h2>All Keymaps</h2>
+
+    <p>
+      When disabled, only the shortcut assignments that have been modified will be exported. This exported file may be thought of as a “keymap delta” instead of a full export.
+    </p>
+
+    <p style="margin-bottom: 100px;">
+      When enabled, the entire keymap is written.
+    </p>
+
+    <h1>Workspaces</h1>
     
+    <p>
+      Workspaces are essentially predefined window layouts.
+      Each Workspace consists of a set of Areas containing Editors, and is geared towards a specific task such as modeling, animating, or scripting.
+      You’ll typically switch between multiple Workspaces while working on a project.
+    </p>
 
+    <img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_workspaces_screen.png" alt="">
+
+    <p>
+      
+      Workspaces are located at the Topbar.
+    
+    </p>
+
+    <h2>Controls</h2>
+
+    <h3>Tabs</h3>
+    
+<p>
+  Click on the tabs to switch between workspaces. Double-click a tab to rename the workspace.
+</p>
+ <h3>Add Workspace</h3>
+    
+<p>
+  Adds a new workspace from a predefined template (e.g. Modeling, Sculpting, Compositing).
+</p>
+
+<h3>Context Menu RMB</h3>
+
+<h4>Duplicate</h4>
+    
+<p>
+  Makes a copy of the selected workspace, including its screen layout and editors.
+</p>
+    
+<h4>Delete</h4>
+    
+<p>
+  Deletes the selected workspace. If it is the last workspace, it cannot be removed.
+</p>
+    
+<h4>Reorder to Front/Back</h4>
+    
+<p>
+  Moves the workspace tab to the first (front) or last (back) position in the tab list.
+</p>
+    
+<h4>Previous Workspace Ctrl-PageUp</h4>
+    
+<p>
+  Activates the workspace immediately to the left of the current one.
+</p>
+    
+<h4>Next Workspace Ctrl-PageDown</h4>
+    
+<p>
+  Activates the workspace immediately to the right of the current one.
+</p>
+    
+<h4>Delete Other Workspaces</h4>
+    
+<p style="margin-bottom: 50px;">
+  Removes all workspaces except the one that was right-clicked on.
+</p>
+
+<h2>Default Workspaces</h2>
+
+<p>
+  Blender’s default startup shows the “Layout” workspace in the main area. This workspace is a general workspace to preview your scene and contains the following Editors:
+</p>
+    
+<p>
+  3D Viewport on top left.
+</p>
+    
+<p>
+  Outliner on top right.
+</p>
+    
+<p>
+  Properties on bottom right.
+</p>
+    
+<p>
+  Timeline on bottom left.
+</p>
+
+<img src="https://docs.blender.org/manual/en/latest/_images/interface_window-system_workspaces_layout.png" alt="">
+
+<p>
+  Blender’s ‘Layout’ Workspace with four editors.
+</p>
+    
+<p style="margin-bottom: 50px;">
+  3D Viewport (yellow), Outliner (green), Properties (blue) and Timeline (red).
+</p>
+
+<p>
+  Blender also has several other workspaces added by default:
+</p>
+
+<h4>Modeling:</h4>
+    
+<p>
+  For modification of geometry by modeling tools.
+</p>
+    
+<h4>Sculpting:</h4>
+    
+<p>
+  For modification of meshes by sculpting tools.
+</p>
+    
+<h4>UV Editing:</h4>
+    
+<p>
+  For mapping of image texture coordinates to 3D surfaces.
+</p>
+    
+<h4>Texture Paint:</h4>
+
+<p>
+  For coloring image textures in the 3D Viewport.
+</p>
+  
+<h4>Shading:</h4>
+
+<p>
+  For specifying material properties for rendering.
+</p>
+
+<h4>Animation:</h4>
+
+<p>
+  For making properties of objects dependent on time.
+</p>
+  
+<h4>Rendering:</h4>
+
+<p>
+  For viewing and analyzing rendering results.
+</p>
+  
+<h4>Compositing:</h4>
+
+<p>
+  For combining and post-processing of images and rendering information.
+</p>
+  
+<h4>Geometry Nodes:</h4>
+
+<p>
+  For procedural modeling using Geometry Nodes.
+</p>
+
+<h4>Scripting:</h4>
+
+<p style="margin-bottom: 50px;">
+  For interacting with Blender’s Python API and writing scripts.
+</p>
+
+<h2>Save and Override</h2>
+
+<p style="margin-bottom: 100px;">
+  The workspaces are saved in the blend-file.
+  When you open a file, enabling Load UI in the File Browser indicates that Blender should use the file’s screen layout rather than the current one.
+  A custom set of workspaces can be saved as a part of the Defaults.
+</p>
+
+<h1>Managing Preferences</h1>
+
+    <p>
+      Default preferences are managed from the ☰ menu in the preferences window.
+    </p>
+
+    <p>
+      The following items are available in this menu:
+    </p>
+
+    <h3>Auto-Save Preferences</h3>
+    
+    <p>
+      By default changes to preferences are saved on exit, this allows changes to the keymap and Quick Favorites menu to be stored and used between Blender Sessions.
+    </p>
+    
+    <p>
+      When disabled, a Save Preferences button is shown to manually perform the operation.
+    </p>
+    
+<h3>Revert to Saved Preferences</h3>
+
+    <p>
+      Undoes any unsaved modifications, loading the previously saved state.
+    </p>
+    
+<h3>Load Factory Preferences</h3>
+    
+    <p style="margin-bottom: 100px;">
+      Completely undo all the modifications made to the preferences, resetting to the state used before making customizations.
+    </p>
+
+    <h1>Themes</h1>
+
+    <p>
+      The Themes section allows you to customize interface appearance and colors.
+    </p>
+
+    <img src="https://docs.blender.org/manual/en/latest/_images/editors_preferences_section_themes.webp" alt="">
+
+    <p style="margin-bottom: 50px;">
+      The colors for each editor can be set separately by simply selecting the editor you wish to change in the multi-choice list at the left, and adjusting colors as required.
+      Notice that changes appear in real-time on your screen.
+      In addition, details such as the dot size in the 3D Viewport or the Graph Editor can also be changed.
+    </p>
+
+<h2>Preset Management</h2>
+    
+<h3>Theme Presets</h3>
+    
+<p>
+  Select the Theme from a list of predefined Themes.
+</p>
+    
+<h3>Add Theme</h3>
+    
+<p>
+  Adds a custom theme to the preset list.
+</p>
+    
+<h3>Remove Theme</h3>
+    
+<p>
+  Removes a custom theme from the preset list.
+</p>
+    
+<h3>Save Theme</h3>
+    
+<p>
+  Save a custom theme in the preset list.
+</p>
+    
+<p>
+  This will save the theme to an XML file in the ./scripts/presets/interface_theme/ subdirectory of one of the configuration directories.
+</p>
+    
+<h3>Install</h3>
+    
+<p>
+  Load and apply a Blender XML theme file and add it to the list of theme presets.
+</p>
+    
+<h3>Reset</h3>
+    
+<p>
+  Reset to the default theme colors.
+</p>
+    
+<p>
+  Blender comes bundled with a small selection of themes.
+</p>
+    
+    <img src="https://docs.blender.org/manual/en/latest/_images/editors_preferences_themes_example.png" alt="">
+
+    <p style="margin-bottom: 100px;">
+      This is an example of the theme Blender Light.
+    </p>
+
+    <h1>Scripts</h1>
+
+    <p>
+      Apart from add-ons, there are several other types of scripts that extend Blender’s functionality:
+    </p>
+
+    <h3>Modules:</h3>
+    
+    <p>
+      Utility libraries for import into other scripts.
+    </p>
+    
+    <h3>Presets:</h3>
+    
+    <p>
+      Settings for Blender’s tools and key configurations.
+    </p>
+    
+    <h3>Startup:</h3>
+    
+    <p>
+      These files are imported when starting Blender. They define most of Blender’s UI, as well as some additional core operators.
+    </p>
+    
+    <h3>Custom Scripts:</h3>
+    
+    <p>
+      In contrast to add-ons, they are typically intended for one-time execution via the Text Editor.
+    </p>
+    
+    <h2>Saving your own Scripts</h2>
+    
+    <h3>File Location</h3>
+    
+    <p>
+      All scripts are loaded from the scripts folder of the local, system and user paths.
+    </p>
+    
+    <p>
+      You can setup an additional search path for scripts in File Paths Preferences ‣ File Paths.
+    </p>
+    
+    <h3>Installation</h3>
+    
+    <p style="margin-bottom: 100px;">
+      Add-ons are conveniently installed through Blender in the Preferences. Click the Install… button and select the .zip file.
+    </p>
+
+    <h1>Add-ons</h1>
+    
+    <p>
+      The Add-ons section lets you manage secondary scripts, called “Add-ons” that extend Blender’s functionality.
+      Most of the time you can get add-ons as part of the Extensions system.
+    </p>
+    
+    <p>
+      In this section you can search, install, enable and disable Add-ons.
+    </p>
+    
+  <h2>Add-on Settings</h2>
+    
+  <h3>Refresh Local</h3>
+    
+    <p>
+      Scan extension & legacy add-ons for changes to modules & meta-data (similar to restarting). Any issues are reported as warnings.
+    </p>
+    
+  <h3>Install from Disk</h3>
+    
+    <p>
+      Install an extension from a .zip package. This is installed to a Local Repository and no updates will be available.
+    </p>
+    
+    <p>
+      This can also be used to install legacy Add-ons, for more information see: Installing Legacy Add-ons.
+    </p>
+    
+  <h2>Enabling & Disabling Add-ons</h2>
+    
+    <p>
+      To enable or disable an add-on check or uncheck the box to the right of the add-ons.
+    </p>
+    
+    <p style="margin-bottom: 100px;">
+      The add-on functionality should be immediately available.
+    </p>
+    
     <h2 style="margin-bottom: 50px;">Referencias:</h2>
 
     <p>
@@ -234,6 +665,11 @@
       Window System Introduction - Blender 5.2 LTS Manual. (s. f.). https://docs.blender.org/manual/en/latest/interface/window_system/introduction.html
       Tool System - Blender 5.2 LTS Manual. (s. f.). https://docs.blender.org/manual/en/latest/interface/tool_system.html
       KeyMap - Blender 5.2 LTS Manual. (s. f.). https://docs.blender.org/manual/en/latest/editors/preferences/keymap.html
+      Workspaces - Blender 5.2 LTS Manual. (s. f.). https://docs.blender.org/manual/en/latest/interface/window_system/workspaces.html
+      Introduction - Blender 5.2 LTS Manual. (s. f.). https://docs.blender.org/manual/en/latest/editors/preferences/introduction.html#managing-preferences
+      Themes - Blender 5.2 LTS Manual. (s. f.). https://docs.blender.org/manual/en/latest/editors/preferences/themes.html
+      Introduction - Blender 5.2 LTS Manual. (s. f.-b). https://docs.blender.org/manual/en/latest/advanced/scripting/introduction.html#scripts
+      Add-ons - Blender 5.2 LTS Manual. (s. f.). https://docs.blender.org/manual/en/latest/editors/preferences/addons.html
     
     </p>
   </body>
